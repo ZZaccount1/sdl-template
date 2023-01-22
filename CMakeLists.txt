@@ -5,11 +5,9 @@ project(${PROJ_NAME})
 
 # Check if we're on Windows or Linux
 if(CMAKE_HOST_SYSTEM_NAME MATCHES "MINGW64_NT-10.0-19044")
-  message(STATUS "[ZZ] - windows")
   set(SDL2_DIR "lib/mingw")
   set(PLATFORM_LIBS mingw32)
 else()
-  message(STATUS "[ZZ] - linux")
   set(SDL2_DIR "lib/linux")
   set(PLATFORM_LIBS "")
 endif()
