@@ -23,4 +23,4 @@ file(GLOB SRCS "src/*.cpp")
 add_executable(${PROJ_NAME} ${SRCS})
 
 # Link libraries
-target_link_libraries(${PROJ_NAME} ${PLATFORM_LIBS} SDL2main SDL2)
+target_link_libraries(${PROJ_NAME} ${PLATFORM_LIBS} SDL2main SDL2 SDL2_image)
