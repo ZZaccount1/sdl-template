@@ -23,4 +23,4 @@ file(GLOB SRCS "src/*.cpp")
 add_executable(main ${SRCS})
 
 # Link libraries
-target_link_libraries(main ${PLATFORM_LIBS} SDL2 SDL2main)
+target_link_libraries(main ${PLATFORM_LIBS} SDL2main SDL2)
