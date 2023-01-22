@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
-project(main)
+
+set(PROJ_NAME "main")
+project(${PROJ_NAME})
 
 # Check if we're on Windows or Linux
 if(CMAKE_HOST_SYSTEM_NAME MATCHES "MINGW64_NT-10.0-19044")
@@ -20,7 +22,7 @@ link_directories(${SDL2_DIR})
 file(GLOB SRCS "src/*.cpp")
 
 # Add executable
-add_executable(main ${SRCS})
+add_executable(${PROJ_NAME} ${SRCS})
 
 # Link libraries
-target_link_libraries(main ${PLATFORM_LIBS} SDL2main SDL2)
+target_link_libraries(${PROJ_NAME} ${PLATFORM_LIBS} SDL2main SDL2)

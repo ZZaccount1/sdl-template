@@ -1,3 +1,4 @@
+- [x] Project name variable in cmakelists
+
 - [ ] Make readme
-- [ ] Project name variable in cmakelists
 - [ ] test/update build for windows
